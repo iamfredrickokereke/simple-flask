@@ -11,3 +11,9 @@ def home():
 @app.route('/api/blog/categories')
 def categories():
     return 'This is the category section!'
+
+
+@app.route('/api/blog/search')
+def search(name="Devops"):
+    name = request.args.get('name', name)
+    return `"{name} not found!"`
