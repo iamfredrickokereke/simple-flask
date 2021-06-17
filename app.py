@@ -16,4 +16,4 @@ def categories():
 @app.route('/api/blog/search')
 def search(name="Devops"):
     name = request.args.get('name', name)
-    return `"{name} not found!"`
+    return "{} not found!".format(name)
