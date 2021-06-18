@@ -9,6 +9,11 @@ def home():
     return 'Welcome to my simple blog!'
 
 
+@app.route('/about')
+def about():
+    return 'About Page!'
+
+
 @app.route('/api/blog/categories')
 def categories():
     return 'This is the category section!'
