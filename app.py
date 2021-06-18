@@ -19,15 +19,15 @@ def categories():
     return 'This is the category section!'
 
 
-@app.route('/api/blog/search')
-def search(name="Devops"):
-    name = request.args.get('name', name)
-    return "{} not found!".format(name)
+# @app.route('/api/blog/search')
+# def search(name="Devops"):
+#     name = request.args.get('name', name)
+#     return "{} not found!".format(name)
 
 
 @app.route('/api/blog/day1')
 def dayone():
-    return render_template('index.html')
+    return render_template('index.html', name='fred')
 
 
 # if __name__ == "__main__":
