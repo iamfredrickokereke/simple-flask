@@ -18,3 +18,12 @@ def categories():
 def search(name="Devops"):
     name = request.args.get('name', name)
     return "{} not found!".format(name)
+
+
+@app.route('/api/blog/day1')
+def dayone():
+    return render_template('index.html')
+
+
+# if __name__ == "__main__":
+#     app.run(debug=True, port=9000)
