@@ -1,3 +1,10 @@
-{% extends "base_layout.html" %} {% block title %}
-<h1>Learnings from Suse Scholarship - Day One</h1>
-{% endblock %} {% block body%} Welcome {{ name }} to Dayone! {% endblock %}
+<h1>Learnings from Suse Scholarship - Daily Scrum</h1>
+
+{% for post in posts %}
+<h3>Day: {{ post.day }}</h3>
+<h3>Description : {{ post.content }}</h3>
+<h3>Date: {{ post.date_posted }}</h3>
+<h3>Done By: {{ post.author }}</h3>
+<br />
+<hr />
+{% endfor %}
