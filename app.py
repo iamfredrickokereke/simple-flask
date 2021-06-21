@@ -59,5 +59,5 @@ def daily():
     return render_template('index.html', posts=posts)
 
 
-# if __name__ == "__main__":
-#     app.run(debug=True, port=9000, host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(debug=True, port=9000, host='0.0.0.0')
