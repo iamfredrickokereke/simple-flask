@@ -1,5 +1,6 @@
 # Python package
 # Create and test a Python package on multiple Python versions.
+# CI worrks on the trigger key
 
 trigger:
 - main
@@ -26,6 +27,7 @@ steps:
   inputs:
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
+    
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
